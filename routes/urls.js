@@ -13,7 +13,7 @@ res.json(urls)
 res.status(500).json({message: err.message})
     }
 })
-console.log("Fetching all stored URLs");
+console.log("Fetching all stored URLs");    
 
 //Gettingg original URL by short code
 router.get('/shorten/:shortCode', async(req, res) => {
@@ -22,6 +22,7 @@ try{
 if(!url){
     return res.status(404).json({message: 'Url not found'})
 }
+console.log("Original URL found for:", req.params.shortCode);
 res.status(200).json({url:url.original_url});
 } catch(err) {
     res.status(500).json({message: err.message});
