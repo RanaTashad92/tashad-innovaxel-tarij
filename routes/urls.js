@@ -13,7 +13,7 @@ res.json(urls)
 res.status(500).json({message: err.message})
     }
 })
-
+console.log("Fetching all stored URLs");
 
 //Gettingg 
 router.get('/shorten/:shortCode', async(req, res) => {
