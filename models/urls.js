@@ -1,3 +1,4 @@
+//Mongo DB Schema
 const mongoose = require('mongoose');
 const urlSchema = new mongoose.Schema({
    original_url: {
