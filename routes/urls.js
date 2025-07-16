@@ -3,7 +3,7 @@ const router = express.Router();
 const Url = require('../models/urls');
 const validUrl = require('valid-url');
 
-//Getting ALL URL'S
+//Getting ALL short URL'S
 router.get('/',async(req,res)=>{
     try{
 const urls=await Url.find()
