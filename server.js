@@ -1,4 +1,6 @@
 require('dotenv').config();
+console.log("Environment variables loaded");
+
 const express =require ('express');
 const app = express();
 const mongoose =require ('mongoose');
