@@ -15,7 +15,7 @@ res.status(500).json({message: err.message})
 })
 console.log("Fetching all stored URLs");
 
-//Gettingg 
+//Gettingg original URL by short code
 router.get('/shorten/:shortCode', async(req, res) => {
 try{
     const url = await Url.findOne({short_code:req.params.shortCode})
