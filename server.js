@@ -18,6 +18,6 @@ const UrlRouter=require('./routes/urls');
 app.use('/urls', UrlRouter);
 
 
-app.listen(3000, () => {
-    console.log('Server Started');
-  });
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
