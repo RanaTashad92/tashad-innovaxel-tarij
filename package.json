@@ -1,0 +1,22 @@
+{
+  "name": "innovexel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": " nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.16.3",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.0",
+    "nodemon": "^3.1.10"
+  }
+}

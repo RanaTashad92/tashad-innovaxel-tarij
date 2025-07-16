@@ -1,0 +1,31 @@
+GET http://localhost:3000/urls
+
+###
+
+GET http://localhost:3000/urls/092
+
+
+###
+POST http://localhost:3000/urls/shorten
+Content-Type: application/json
+
+{
+    "originalUrl": "https://www.youtube.com/"
+}
+
+###
+GET http://localhost:3000/urls/shorten/zob4f9
+
+###
+PATCH http://localhost:3000/urls/shorten/aubgsh
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+}
+
+###
+DELETE http://localhost:3000/urls/shorten/hzk3bc
+
+###
+GET http://localhost:3000/shorten/hzk3bc/stats
