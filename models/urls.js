@@ -6,9 +6,9 @@ const urlSchema = new mongoose.Schema({
    },
    short_code:{type:String,required:true,unique:true},
 
-   created_at: {type:String, default: Date.now},
+   created_at: {type:Date, default: Date.now},
 
-   updated_at: {type:String, default: Date.now},
+   updated_at: {type:Date, default: Date.now},
 
     access_count: {type:Number, default: 0},
 
